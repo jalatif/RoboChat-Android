@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:paddingTop="100dp" android:paddingBottom="30dp"
+              android:paddingLeft="20dp" android:paddingRight="20dp" android:background="@drawable/board">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:paddingBottom="20dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:id="@+id/textView" android:layout_gravity="center_vertical|top" android:paddingRight="20dp"/>
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etUsername" android:layout_gravity="center_vertical|top" android:gravity="center_vertical"
+                android:enabled="true" android:editable="true" android:hint="Username" android:inputType="text"
+                android:lines="1" android:maxLength="20" android:maxLines="1" android:minLines="1"
+                android:singleLine="true"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:paddingBottom="20dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:id="@+id/textView1" android:paddingRight="20dp"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/etPassword" android:editable="true" android:enabled="true" android:gravity="center_vertical|left"
+                android:inputType="textPassword" android:hint="Password   " android:password="true"
+                />
+        <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Password"
+                android:id="@+id/tbShow" android:checked="true" android:layout_gravity="center_vertical|right"
+                />
+    </LinearLayout>
+    <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/bLogin" android:layout_gravity="center"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:text="Register"
+            android:id="@+id/bRegister" android:layout_gravity="left|center_vertical" android:height="40dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLoginLog" android:layout_gravity="left|center_vertical"
+            android:textColor="@android:color/holo_red_dark"/>
+</LinearLayout>

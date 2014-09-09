@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.jalatif.Chat"
+          android:versionCode="1"
+          android:versionName="1.0"
+          android:installLocation="auto">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+
+    <uses-sdk android:minSdkVersion="10"
+              android:targetSdkVersion="16"/>
+    <application android:label="@string/app_name" android:icon="@drawable/talk">
+
+        <activity android:name=".PortInfo"
+                  android:label="RoboChat">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Login"
+                  android:label="Login for the user"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".AvailableUsers"
+                  android:label="Users List"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".ChatWindow"
+                  android:label="Chat b/w users"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".TabbedChat"
+                  android:label="Chat b/w users"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".ClientChatHandler"
+                  android:label="ChatWindow"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <service android:name=".SocketService"/>
+
+    </application>
+</manifest>
+

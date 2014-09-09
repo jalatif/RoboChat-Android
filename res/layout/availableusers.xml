@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:weightSum="2" android:background="@drawable/board">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="300dp" android:layout_weight="1">
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Online Users"
+                android:id="@+id/textView" android:gravity="center"/>
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lvOnline" android:layout_gravity="center_vertical" android:choiceMode="singleChoice"
+                android:fastScrollAlwaysVisible="false" android:fastScrollEnabled="true" android:smoothScrollbar="true"
+                android:scrollingCache="true"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_weight="1">
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Offline Users"
+                android:id="@+id/textView1" android:gravity="center" android:paddingTop="30dp"/>
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lvOffline" android:choiceMode="singleChoice" android:scrollingCache="true"
+                android:smoothScrollbar="true" android:fastScrollAlwaysVisible="false" android:fastScrollEnabled="true"/>
+    </LinearLayout>
+</LinearLayout>

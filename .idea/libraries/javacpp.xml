@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="javacpp">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../CheckVideo/libs/javacpp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../CheckVideo/libs/javacv.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
